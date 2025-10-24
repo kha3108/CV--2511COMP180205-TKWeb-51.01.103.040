@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+.cv-container {
+    max-width: 1000px; 
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    min-height: 800px;
+}
+.sidebar {
+    flex: 0 0 40%;
+    background-color: #70aa98; 
+    color: white;
+    padding: 30px 20px;
+}
+.sidebar h3 {
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: #a33607;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+.sidebar p, .sidebar li {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+    background-color: #555555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Lệnh này khiến ảnh lấp đầy khung 120x120px và cắt bỏ các phần thừa */
+}
+.icon-placeholder {
+    font-size: 50px;
+    color: #aaa;
+}
+.section {
+    margin-bottom: 25px;
+}
+.contact p i {
+    margin-right: 10px;
+    color: #a33607;
+}
+.main-content {
+    flex: 1;
+    padding: 30px;
+}
+.main-content header {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+.main-content h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 5px;
+}
+.main-content .title {
+    font-size: 1.2em;
+    color: #007bff;
+    font-weight: bold;
+}
+.content-section {
+    margin-bottom: 30px;
+}
+.content-section h2 {
+    font-size: 1.5em;
+    color: #333;
+    border-bottom: 2px solid #e15921;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.content-section h2 i {
+    margin-right: 10px;
+    color: #007bff;
+}
+.content-section .item {
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border-left: 3px solid #ccc;
+}
+.content-section .item h3 {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 3px;
+}
+
+.content-section .item .period {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.main-content .title {
+    color: #e15921;
+}
+
+</style>
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="cv-container">
+        <div class="sidebar">
+            <div class="profile-pic">
+                <img src="cv.png" alt="Ảnh đại diện" class="profile-img">
+            </div>
+            
+            <div class="section contact">
+                <h3>THÔNG TIN CÁ NHÂN</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Địa chỉ: 280 An Dương Vương</p>
+                <p><i class="fa-solid fa-phone"></i> Điện thoại: 0123456789</p>
+                <p><i class="fa-solid fa-envelope"></i>Email: cv@gmail.com</p>
+            </div>
+
+            <div class="section">
+                <h3>SỞ THÍCH</h3>
+                <p>Đi du lịch</p>
+                <p>Xem phim, nghe nhạc, đọc sách</p>
+            </div>
+
+            <div class="section skills">
+                <h3>KỸ NĂNG</h3>
+                <ul>
+                    <li>Kỹ năng giao tiếp</li>
+                    <li>Kỹ năng viết nội dung </li>
+                </ul>
+            </div>
+
+            <div class="section reference">
+                <h3>NGƯỜI THAM CHIẾU</h3>
+                <p><strong></strong>Nguyễn Văn A</p>
+                <p>Liên hệ;: 0123456789 </p>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <header>
+                <h1>PHẠM DUY KHA</h1>
+                <p class="title">Sinh viên ngành Sư phạm Tin học</p>
+            </header>
+
+            <div class="content-section education">
+                <h2>CHỨNG CHỈ</h2>
+                <div class="item">
+                    <p>Tiếng anh B1</p>
+                    <p>Chứng chỉ tin học văn phòng</p>
+                </div>
+            <div class="content-section experience">
+                <h2>KINH NGHIỆM LÀM VIỆC </h2>
+                <div class="item">
+                    <p class="period">2018-2023</p>
+                    <h3></h3>
+                    <p>Học sinh tại Trường THPT Nguyễn Thông</p>
+                    <h3> Thành tích đạt được:</h3>
+                    <p>HSG, HSXS</p>
+                    <p>Điểm thi THPTQG: 24,5 A01</p>
+                </div>
+            </div>
+            </div>
+    </div>
+</body>
+</html>
+</body>
+</html>
